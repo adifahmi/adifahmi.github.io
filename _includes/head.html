@@ -2,9 +2,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
     <link rel="shortcut icon" href="{{ "/assets/ico/favicon.ico" | prepend: site.baseurl }}">
+
+    <!-- Twitter meta tag -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@adifahmii" />
+    <meta name="twitter:title" content="{{ site.description }}" />
+    <meta name="twitter:description" content="Visit the site to view it." />
+    <meta name="twitter:image" content="http://adifahmi.github.io/about-me/img/author2.jpg" />
+
+    <!-- Global meta tag -->
+    <meta property="og:url" content="http://adifahmi.github.io" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:image" content="http://adifahmi.github.io/about-me/img/author2.jpg" />
+
+    <!-- Chrome color meta tag -->
+    <meta name="theme-color" content="#384452">
 
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
@@ -16,7 +33,7 @@
     <link href="{{ "/assets/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">-->
+    <link href="{{ "/assets/css/custom.css" | prepend: site.baseurl }}" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->

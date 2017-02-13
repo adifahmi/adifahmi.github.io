@@ -26,16 +26,12 @@ colors:  #in hex code if not noted else
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
   - title: facebook
-    url: fb.com/adifahmii
+    url: https://fb.com/adifahmii
   - title: twitter
-    url: twitter.com/adifahmii
+    url: https://twitter.com/adifahmii
   - title: instagram
-    url: instagram.com/adifahmii
-  - title: tumblr
-    url: 
+    url: https://instagram.com/adifahmii
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
@@ -50,43 +46,43 @@ tel: +62 838 768 682 38
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
 # Members information. Shown on About page.
-members:
-  - name: Mark Webber
-    position: CEO
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team01.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Paul Jameson
-    position: Lead Designer
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team02.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Laura Sommers
-    position: Lead Developer
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team03.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Martin Blunt
-    position: Marketing
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team04.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
+# members:
+#   - name: Mark Webber
+#     position: CEO
+#     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+#     img: team01.jpg
+#     social:
+#       - title: envelope #use for email address
+#         url: mailto:name@domain.com
+#       - title: twitter
+#         url: http://twitter.com/handle
+#   - name: Paul Jameson
+#     position: Lead Designer
+#     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+#     img: team02.jpg
+#     social:
+#       - title: envelope #use for email address
+#         url: mailto:name@domain.com
+#       - title: twitter
+#         url: http://twitter.com/handle
+#   - name: Laura Sommers
+#     position: Lead Developer
+#     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+#     img: team03.jpg
+#     social:
+#       - title: envelope #use for email address
+#         url: mailto:name@domain.com
+#       - title: twitter
+#         url: http://twitter.com/handle
+#   - name: Martin Blunt
+#     position: Marketing
+#     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+#     img: team04.jpg
+#     social:
+#       - title: envelope #use for email address
+#         url: mailto:name@domain.com
+#       - title: twitter
+#         url: http://twitter.com/handle
     
 # Clients information. Shown on Home and About pages.
 clients:
@@ -100,7 +96,7 @@ clients:
     img: client04.png
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about: "A fresh graduate with some works and projects experience. Used to autodidact, willing to learn and making fast adaption to work as a team."
 
 # Testimonial content. Shown on Home and About page. 
 testimonial:

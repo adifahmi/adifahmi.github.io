@@ -6,6 +6,7 @@ description: "Adi Fahmi Personal Site."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://adifahmi.github.io"
+author: Adi Fahmi
 
 # Build settings
 markdown: kramdown

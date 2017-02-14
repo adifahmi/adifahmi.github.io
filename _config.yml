@@ -3,7 +3,7 @@
 # Site settings
 title: ADI FAHMI
 description: "Adi Fahmi Personal Site."
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
+analytics: UA-91950225-1 #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://adifahmi.github.io"
 author: Adi Fahmi

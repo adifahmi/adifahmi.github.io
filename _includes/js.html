@@ -55,31 +55,31 @@
 
       // disable the button then submit the form
       // $("#submit-button").attr("disabled", true);
-      form.submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            url: '//formspree.io/adifahmi379@gmail.com',
-            method: 'POST',
-            data: $(this).serialize(),
-            dataType: 'json',
-            beforeSend: function() {
-              $("#submit-button").attr("disabled", true).val('Sending message…');
-            },
-            success: function(data) {
-              $("#submit-button").val('Message sent!');
-              setTimeout(function() {
-                $("#submit-button").attr('disabled', false).val('Send me');
-              }, 5000);
-            },
-            error: function(err) {
-              $("#submit-button").val('Ops, there was an error.');
-              setTimeout(function() {
-                $("#submit-button").attr('disabled', false).val('Send me');
-              }, 5000);
-            }
-        });
+      // form.submit();
+      $.ajax({
+          url: '//formspree.io/adifahmi379@gmail.com',
+          method: 'POST',
+          data: $(form).serialize(),
+          dataType: 'json',
+          beforeSend: function() {
+            $("#submit-button").attr("disabled", true).val('Sending message…');
+          },
+          success: function(data) {
+            console.log(data);
+            $("#submit-button").val('Message sent!');
+            setTimeout(function() {
+              $("#submit-button").attr('disabled', false).val('Send me');
+            }, 5000);
+          },
+          error: function(err) {
+            console.log(err);
+            $("#submit-button").val('Ops, there was an error.');
+            setTimeout(function() {
+              $("#submit-button").attr('disabled', false).val('Send me');
+            }, 5000);
+          }
+          return false;
       });
-
     }
   });
 })(jQuery);

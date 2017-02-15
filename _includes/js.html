@@ -67,15 +67,15 @@
           success: function(data) {
             console.log(data);
             $("#submit-button").val('Message sent!');
-            setTimeout(function() {
-              $("#submit-button").attr('disabled', false).val('Send me');
-            }, 5000);
+            $(form).trigger("reset");
+            $("#contact_div").addClass('hidden');
+            $("#success-div").removeClass('hidden');
           },
           error: function(err) {
             console.log(err);
             $("#submit-button").val('Ops, there was an error.');
             setTimeout(function() {
-              $("#submit-button").attr('disabled', false).val('Send me');
+              $("#submit-button").attr('disabled', false).val('Send again');
             }, 5000);
           }
       });

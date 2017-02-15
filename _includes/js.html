@@ -65,11 +65,11 @@
             $("#submit-button").attr("disabled", true).val('Sending message…');
           },
           success: function(data) {
-            console.log(data);
+            //console.log(data);
             $("#submit-button").val('Message sent!');
             $(form).trigger("reset");
             $("#contact_div").addClass('hidden');
-            $("#success-div").removeClass('hidden');
+            $("#success_div").removeClass('hidden');
           },
           error: function(err) {
             console.log(err);

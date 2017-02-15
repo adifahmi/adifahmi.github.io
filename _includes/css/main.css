@@ -521,3 +521,26 @@ if it's not present, don't show loader */
     z-index: 9999;
     background: url(https://raw.githubusercontent.com/AdiFahmi/about-me/gh-pages/img/preloader.gif) center no-repeat #fff;
 }
+
+/*Scroll to top CSS*/
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 100%;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}

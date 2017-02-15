@@ -59,6 +59,18 @@
 </script>
 
 <script>
+// disable button after submit
+(function($) {
+  $(document).ready(function () {
+    $("#contact_form").submit(function () {
+        $("#submit-button").attr("disabled", true);
+        return true;
+    });
+});
+})(jQuery);
+</script>
+
+<script>
 // jQuery for page scrolling feature
 (function($) {
   $('#scroll-to-top').click(function(){

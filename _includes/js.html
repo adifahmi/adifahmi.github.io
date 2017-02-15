@@ -52,7 +52,7 @@
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
     submitHandler: function(form) {
-      $("#submit-button").attr("disabled", false);
+      $("#submit-button").attr("disabled", true);
       form.submit();
     }
   });
@@ -60,15 +60,16 @@
 </script>
 
 <script>
+// TODO : Still bugged
 // disable button after submit
-(function($) {
-  $(document).ready(function () {
-    $("#contact_form").submit(function () {
-        $("#submit-button").attr("disabled", true);
-        return true;
-    });
-});
-})(jQuery);
+// (function($) {
+//   $(document).ready(function () {
+//     $("#contact_form").submit(function () {
+//         $("#submit-button").attr("disabled", true);
+//         return true;
+//     });
+// });
+// })(jQuery);
 </script>
 
 <script>

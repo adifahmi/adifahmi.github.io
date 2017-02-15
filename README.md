@@ -1,7 +1,7 @@
 # Read Me
 
 <p align="center">
-[![Jekyll](http://adifahmi.github.io/assets/img/octojekyll.png)](https://jekyllrb.com/)
+![Jekyll](http://adifahmi.github.io/assets/img/octojekyll.png)(https://jekyllrb.com/)
 </p>
 
 This is an implementation of [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com/), where you can _Hosted directly from your GitHub repository. Just edit, push, and your changes are live._

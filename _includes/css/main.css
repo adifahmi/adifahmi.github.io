@@ -537,10 +537,13 @@ if it's not present, don't show loader */
     height: 50px;
     font-size: 20px;
     border-radius: 100%;
-    padding-left: 15px;
-    padding-top: 5px;
 }
 
 .scroll-top .btn:focus {
     outline: 0;
+}
+
+/*From error jQuery validation*/
+form .error {
+  color: #ff0000;
 }

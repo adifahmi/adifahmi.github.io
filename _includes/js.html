@@ -19,8 +19,9 @@
 
 </script>
 {% endif %}
-//jQuery form Validation
+
 <script>
+// jQuery form Validation
 // Wait for the DOM to be ready
 (function($) {
   // Initialize form validation on the registration form.
@@ -56,6 +57,25 @@
   });
 })(jQuery);
 </script>
+
+<script>
+// jQuery for page scrolling feature
+(function($) {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+})(jQuery);
+</script>
+
 <script>
 // Portfolio
 (function($) {

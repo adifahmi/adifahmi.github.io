@@ -21,6 +21,8 @@ $(window).load(function() {
 (function($) {
   // Initialize form validation on the registration form.
   $("form[name='contact_form']").validate({
+	// Disable autofocus on valid input
+	focusInvalid: false,
     // Specify validation rules
     rules: {
       // The key name on the left side is the name attribute

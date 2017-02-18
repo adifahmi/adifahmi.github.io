@@ -52,6 +52,10 @@ tel: +62 838 768 682 38
 url: https://adifahmi.me
 enforce_ssl: adifahmi.me
 
+# JEKYLL SITEMAP
+gems:
+  - jekyll-sitemap
+
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
 # Members information. Shown on About page.

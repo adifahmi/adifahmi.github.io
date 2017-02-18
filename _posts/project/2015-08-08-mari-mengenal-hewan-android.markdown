@@ -1,20 +1,21 @@
 ---
 layout: project
-title:  "MARI MENGENAL HEWAN E-LEARNING APP"
-date:   2015-08-08 12:00:00
-author: Adi Fahmi
+title:  "YOUR PROJECT NAME"
+date:   2014-04-25 16:54:46
+author: Marcel Newman
 categories:
 - project
-img: mmh.jpg
-thumb: thumb02.jpg
+img: portfolio_01.jpg
 carousel:
-- mmh-1.jpg
-- mmh-2.jpg
-- mmh-3.jpg
-tagged: Android, Self Project 
-client: Gunadarma University
-website: -
+- single01.jpg
+- single02.jpg
+- single03.jpg
+tagged: Flat, UI, Development
+client: Wonder Corp.
+website: http://blacktie.co
 ---
-MARI MENGENAL HEWAN E-LEARNING APP
-This is my very first Android application for my Scientific Writing. A static e-learning app for children with sound and quiz features. <br>
-You can download the app from <a href="https://www.dropbox.com/s/6l9thckuqtd5jg3/Mari_Mengenal_Hewan_V_1.0.2.apk?dl=0" target="_blank">Dropbox</a> or <a href="http://adifahmi.orgfree.com/afbox/index.php/Download/get_file/Do9285Yhsi" target="_blank">AF Box</a>
+####YOUR PROJECT NAME
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+####Our Proposal
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

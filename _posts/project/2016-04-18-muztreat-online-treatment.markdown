@@ -18,5 +18,5 @@ website: http://muztreat.id
 Muztreat is the first muslim online treatment in Indonesia.
 <br>
 This is my first professional work as a full-stack web developer.
-<br>
+<br><br>
 Visit the live preview version <a href="http://muztreat.id" target="blank">here</a>.

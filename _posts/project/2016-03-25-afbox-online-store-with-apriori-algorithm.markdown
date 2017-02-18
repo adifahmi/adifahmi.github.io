@@ -18,5 +18,5 @@ website: http://adifahmi.orgfree.com/afstore/
 ---
 <h3>AF STORE - ONLINE WEB STORE WITH APRIORI ALGORITHM</h3>
 Online web store with lots of feature for both user and administrator. Using <a href="https://www.wikiwand.com/en/Apriori_algorithm" target="_blank">apriori algorithm</a> to give suggestion for customer based on all previous trasaction.
-<br>
+<br><br>
 Visit the live preview version <a href="http://adifahmi.orgfree.com/afstore/" target="_blank">here</a>.

@@ -5,7 +5,7 @@ title: ADI FAHMI
 description: "Adi Fahmi's Personal Site."
 analytics: UA-91950225-1 #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://adifahmi.me"
+url: "https://adifahmi.me"
 author: Adi Fahmi
 disqus_shortname: adifahmi
 
@@ -48,6 +48,9 @@ address:
 email: adifahmi379@gmail.com
 tel: +62 838 768 682 38
 
+# SEARCH ENGINE KNOW HTTPS
+url: https://adifahmi.me
+enforce_ssl: adifahmi.me
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     

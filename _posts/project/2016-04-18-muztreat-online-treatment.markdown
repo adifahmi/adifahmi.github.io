@@ -7,9 +7,11 @@ categories:
 - project
 img: muztreat.jpg
 carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+- muztreat-1.jpg
+- muztreat-2.jpg
+- muztreat-3.jpg
+- muztreat-4.jpg
+- muztreat-5.jpg
 tagged: Web, Start-up, Professional
 client: Muztreat.
 website: http://muztreat.id

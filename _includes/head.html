@@ -23,14 +23,14 @@
     <!-- Twitter meta tag -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@adifahmii" />
-    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}" />
     <meta name="twitter:description" content="{{ site.description }}" />
     <meta name="twitter:image" content="https://adifahmi.github.io/assets/img/af-logo.png" />
 
     <!-- Global meta tag -->
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:image" content="https://adifahmi.github.io/assets/img/af-logo.png" />
 

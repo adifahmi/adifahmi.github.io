@@ -11,7 +11,7 @@ carousel:
 - afstore-2.jpg
 - afstore-3.jpg
 - afstore-4.jpg
-- afsttore-5.jpg
+- afstore-5.jpg
 tagged: Web, Task, College
 client: Self Project
 website: http://adifahmi.orgfree.com/afstore/

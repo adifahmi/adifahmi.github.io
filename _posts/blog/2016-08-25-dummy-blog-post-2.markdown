@@ -1,7 +1,7 @@
 ---
-layout: post
-title:  "Dummy Blog Post - 2"
-date:   2016-08-25 16:54:46
+layout: blog
+title: "Dummy Blog Post - 2"
+date: 2016-08-25 16:54:46
 author: Adi Fahmi
 categories: 
 - blog

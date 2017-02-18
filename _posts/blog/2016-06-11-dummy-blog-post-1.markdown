@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "Dummy Blog Post - 1"
 date: 2016-06-11 16:54:46
 author: Adi Fahmi

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dummy Blog Post #1"
+title: "Dummy Blog Post - 1"
 date: 2016-06-11 16:54:46
 author: Adi Fahmi
 categories:

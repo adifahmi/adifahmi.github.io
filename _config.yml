@@ -111,6 +111,7 @@ clients:
 # Short text. Shown in footer on every page and also separately on Home and Contact page.
 about: "This site is hosted on GitHub, theme is Solid. A Bootstrap theme for Jekyll. © Adi Fahmi 2017."
 about_author: "<del>A fresh graduate</del> Currently a Software Engineer at software company in South Jakarta with some works and projects experience. Used to autodidact, willing to learn and making fast adaption to work as a team."
+about_author_short: "<del>A fresh graduate</del> Currently a Software Engineer at software company in South Jakarta ..."
 
 # Testimonial content. Shown on Home and About page. 
 testimonial:

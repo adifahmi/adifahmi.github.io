@@ -17,4 +17,4 @@ website: http://adifahmi.orgfree.com/afbox
 ---
 AF BOX
 <h3>A simple file hosting with materialize CSS</h3>
-Visit the live preview version <a href="http://adifahmi.orgfree.com/afbox/" target="blank">here</a>.d
+Visit the live preview version <a href="http://adifahmi.orgfree.com/afbox/" target="_blank">here</a>.d

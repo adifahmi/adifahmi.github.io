@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Our new logo is here"
+title:  "Dummy Blog Post #2"
 date:   2016-08-25 16:54:46
-author: Admin
+author: Adi Fahmi
 categories: 
 - blog
 - Web-Design

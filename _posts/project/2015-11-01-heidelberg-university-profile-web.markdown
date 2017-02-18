@@ -13,6 +13,7 @@ carousel:
 tagged: Web, Task, College
 client: LabTI Gunadarma.
 website: http://adifahmi.orgfree.com/heidelberg/
+description: My first project building a Web App using CodeIgniter (PHP framework) as back-end and Bootstrap as front-end. Standard CRUD (create, read, update, delete) was implemented here.
 ---
 <h3>UNIVERSITY PROFILE WEB APPLICATION</h3>
 My first project building a Web App using CodeIgniter (PHP framework) as back-end and Bootstrap as front-end. Standard CRUD (create, read, update, delete) was implemented here.

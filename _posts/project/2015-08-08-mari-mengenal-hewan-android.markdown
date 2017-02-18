@@ -13,6 +13,7 @@ carousel:
 tagged: Android, Task, College
 client: Gunadarma University
 website:
+description: This is my very first Android application for my Scientific Writing (Penulisan Ilmiah). A static e-learning app for children with sound and quiz features.
 ---
 <h3>MARI MENGENAL HEWAN E-LEARNING APP</h3>
 This is my very first Android application for my Scientific Writing (Penulisan Ilmiah). A static e-learning app for children with sound and quiz features. <br><br>

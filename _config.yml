@@ -8,6 +8,7 @@ baseurl: "" #important: start with /
 url: "https://adifahmi.me"
 author: Adi Fahmi
 disqus_shortname: adifahmi
+twitter_username: adifahmii
 
 # Build settings
 markdown: kramdown

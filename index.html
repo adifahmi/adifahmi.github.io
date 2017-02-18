@@ -34,8 +34,8 @@ permalink: /
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-5 col-lg-offset-2">
-            <h4>More About Me.</h4>
-            <p>{{ site.about_author }}</p>
+            <h4>Who am I?.</h4>
+            <p>{{ site.about_author | truncatewords: 50}} ...</p>
             <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
         </div>
 

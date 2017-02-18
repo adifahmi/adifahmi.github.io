@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Our new logo is here"
-date:   2014-04-25 16:54:46
+title: "Logo design contest starts now"
+date: 2016-06-11 16:54:46
 author: Admin
-categories: 
+categories:
 - blog
-- Web-Design
-- Development
-img: post02.jpg
-thumb: thumb02.jpg
+- Tips-and-Tricks
+- Code-Snippets
+img: post03.jpg
+thumb: thumb03.jpg
 ---
 
 <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

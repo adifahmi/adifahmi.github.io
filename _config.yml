@@ -102,7 +102,7 @@ clients:
     img: client04.png
     
 # Short text. Shown in footer on every page and also separately on Home and Contact page.
-about: "This site is hosted on GitHub, theme is Solid. A Bootstrap theme for Jekyll. View the source code <a href=https://github.com/AdiFahmi/AdiFahmi.github.io target=_blank>here</a>. © Adi Fahmi 2017."
+about: "This site is hosted on GitHub, theme is Solid. A Bootstrap theme for Jekyll. © Adi Fahmi 2017."
 about_author: "<del>A fresh graduate</del> Currently a Software Engineer with some works and projects experience. Used to autodidact, willing to learn and making fast adaption to work as a team."
 
 # Testimonial content. Shown on Home and About page. 

@@ -10,7 +10,7 @@ carousel:
 - mmh-1.jpg
 - mmh-2.jpg
 - mmh-3.jpg
-tagged: Android, Self Project 
+tagged: Android, Task, College
 client: Gunadarma University
 website:
 ---

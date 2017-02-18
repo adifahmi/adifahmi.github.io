@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "UNIVERSITY PROFILE WEB APPLICATION"
+title:  "HEIDELBERG UNIVERSITY"
 date:   2015-11-01 12:00:00
 author: Adi Fahmi
 categories:

@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "MARI MENGENAL HEWAN E-LEARNING APP"
+title:  "MARI MENGENAL HEWAN"
 date:   2015-08-08 12:00:00
 author: Adi Fahmi
 categories:

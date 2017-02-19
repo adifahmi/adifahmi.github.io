@@ -4,7 +4,7 @@ title:  "MARI MENGENAL HEWAN"
 date:   2015-08-08 12:00:00
 author: Adi Fahmi
 categories:
-- project
+- portfolio
 img: mmh.jpg
 carousel:
 - mmh-1.jpg

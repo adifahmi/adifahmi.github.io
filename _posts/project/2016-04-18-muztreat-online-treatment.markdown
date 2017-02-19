@@ -4,7 +4,7 @@ title:  "MUZTREAT"
 date:   2016-04-18 12:00:00
 author: Adi Fahmi
 categories:
-- project
+- portfolio
 img: muztreat.jpg
 carousel:
 - muztreat-1.jpg

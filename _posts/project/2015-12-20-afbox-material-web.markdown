@@ -4,7 +4,7 @@ title:  "AF BOX"
 date:   2015-12-20 12:00:00
 author: Adi Fahmi
 categories:
-- project
+- portfolio
 img: afbox.jpg
 carousel:
 - afbox-1.jpg

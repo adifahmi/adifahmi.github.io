@@ -4,7 +4,7 @@ title:  "AF STORE"
 date:   2016-03-25 12:00:00
 author: Adi Fahmi
 categories:
-- project
+- portfolio
 img: afstore.jpg
 carousel:
 - afstore-1.jpg

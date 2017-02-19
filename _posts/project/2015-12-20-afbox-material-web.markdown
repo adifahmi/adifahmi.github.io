@@ -16,7 +16,8 @@ client: Self Project.
 website: http://adifahmi.orgfree.com/afbox/
 description: A simple file hosting with materialize CSS.
 ---
-AF BOX
-<h3>A simple file hosting with materialize CSS</h3>
+<h3>AF BOX</h3>
+A simple, beautiful and responsive filehosting. <br>
+Created with CodeIgniter and <a href="http://materializecss.com" target="_blank">MaterializeCSS</a>.
 <br><br>
 Visit the live preview version <a href="http://adifahmi.orgfree.com/afbox/" target="_blank">here</a>.

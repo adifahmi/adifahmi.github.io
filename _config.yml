@@ -29,6 +29,8 @@ colors:  #in hex code if not noted else
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
+  - title: github
+    url: https://github.com/AdiFahmi
   - title: facebook
     url: https://fb.com/adifahmii
   - title: twitter

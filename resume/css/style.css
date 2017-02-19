@@ -399,7 +399,9 @@ ul ul {
 }
 
 li {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    list-style-position: outside;
+    margin-left: 1em
 }
 
 code {

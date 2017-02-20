@@ -1,0 +1,10 @@
+<p>
+    <csmall>
+        {% assign words = content | number_of_words %}
+        {% if words < 360 %}
+            <i class="fa fa-clock-o" aria-hidden="true"></i> Reading time 1 minute
+        {% else %}
+            <i class="fa fa-clock-o" aria-hidden="true"></i> Reading time ~{{ words | divided_by:180 }} minutes
+        {% endif %}
+    </csmall>
+</p>

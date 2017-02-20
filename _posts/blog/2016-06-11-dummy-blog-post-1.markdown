@@ -34,11 +34,11 @@ function myFunction(p1, p2) {
 }
 ```
 
-```php
+{% highlight php %}
 for ($x = 0; $x <= 10; $x++) {
   echo "The number is: $x <br>";
 }
-```
+{% endhighlight %}
 
 ```java
 public static int methodName(int a, int b) {

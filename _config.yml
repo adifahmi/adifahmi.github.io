@@ -12,6 +12,7 @@ twitter_username: adifahmii
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 

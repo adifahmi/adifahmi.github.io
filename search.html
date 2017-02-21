@@ -29,7 +29,8 @@ description: Search blog post.
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.categories | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape }}"
+        "url": "{{ post.url | xml_escape }}",
+        "img": "adifahmi.github.io/assets/img/blog{{ post.img }}"
       }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}

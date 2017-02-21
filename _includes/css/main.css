@@ -523,16 +523,13 @@ if it's not present, don't show loader */
 
 /* Scroll to top CSS */
 .scroll-top {
+    display: none;
     z-index: 1049;
     position: fixed;
     right: 2%;
     bottom: 2%;
     width: 50px;
     height: 50px;
-}
-
-.scroll-top {
-    display: none;
 }
 
 .scroll-top .btn {

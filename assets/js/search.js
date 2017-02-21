@@ -10,7 +10,7 @@
         appendString += '<li><a href="' + item.url + '"><img src="' + item.img + '" class="img-responsive"></a>';
         appendString += '<a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
         appendString += '<em class="small-em">' + item.date + '</em>';
-        appendString += '<p><csmall>' + item.content.substring(0, 150) + '...</csmall></p></li>';
+        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
       }
 
       searchResults.innerHTML = appendString;

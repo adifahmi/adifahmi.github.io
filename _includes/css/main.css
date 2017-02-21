@@ -532,6 +532,7 @@ if it's not present, don't show loader */
 }
 
 .scroll-top .btn {
+    display: none;
     width: 50px;
     height: 50px;
     font-size: 20px;

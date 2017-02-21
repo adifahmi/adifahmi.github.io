@@ -9,7 +9,7 @@
         var item = store[results[i].ref];
         appendString += '<li><a href="' + item.url + '"><img src="' + item.img + '" class="img-responsive"></a>';
         appendString += '<a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += 'Posted on <em class="small-em">' + item.date + '</em>';
+        appendString += '<em class="small-em">Posted on ' + item.date + '</em>';
         appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
         appendString += '<br><br>';
       }

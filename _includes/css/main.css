@@ -531,8 +531,11 @@ if it's not present, don't show loader */
     height: 50px;
 }
 
-.scroll-top .btn {
+.scroll-top {
     display: none;
+}
+
+.scroll-top .btn {
     width: 50px;
     height: 50px;
     font-size: 20px;

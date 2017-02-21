@@ -14,9 +14,15 @@ description: This is dummy blog post number 3.
 
 <b>Testing GitHub Markdown code block</b> 
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
+```css
+#div1 {
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
 }
 ```
 
@@ -34,11 +40,11 @@ function myFunction(p1, p2) {
 }
 ```
 
-{% highlight php %}
+```php
 for ($x = 0; $x <= 10; $x++) {
   echo "The number is: $x <br>";
 }
-{% endhighlight %}
+```
 
 ```java
 public static int methodName(int a, int b) {

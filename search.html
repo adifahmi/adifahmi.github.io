@@ -31,8 +31,7 @@ description: Search blog post.
 
 <script>
   window.store = {
-    {% for category in site.categories %}{% unless category.first == "blog" or category.first == "portfolio" %}
-     {% for post in site.categories[category.first] %}
+    {% for post in site.categories.blog %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
@@ -42,8 +41,8 @@ description: Search blog post.
         "img": "/assets/img/{{ post.layout }}/{{ post.img }}",
         "date": "{{ post.date | date_to_string }}"
       }
-      {% endfor %}
-      {% endunless %}{% endfor %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
   };
 </script>
 <script src="{{ "/assets/js/lunr.min.js" | prepend: site.baseurl }}"></script>

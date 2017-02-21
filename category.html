@@ -10,7 +10,7 @@ description: List all blog category from this site.
         <div class="col-lg-8">
 
         <! -- BLOG POSTS LIST -->
-        {% for category in site.categories %}{% unless category.first == "blog" or category.first == "portfolio" or category.first == "question" %}
+        {% for category in site.categories %}{% unless category.first == "blog" or category.first == "portfolio" %}
 
                 <a class="anchor" id="{{ category.first }}"></a><h4>{{ category.first }}</h4>
                     <div class="hline"></div>

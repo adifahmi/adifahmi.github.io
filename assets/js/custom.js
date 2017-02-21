@@ -20,8 +20,8 @@ $(window).load(function() {
 (function($) {
   // Initialize form validation on the registration form.
   $("form[name='contact_form']").validate({
-	// Disable autofocus on valid input
-	focusInvalid: false,
+    // Disable autofocus on valid input
+    focusInvalid: false,
     // Specify validation rules
     rules: {
       // The key name on the left side is the name attribute
@@ -86,6 +86,8 @@ $(window).load(function() {
   // Initialize form validation on the registration form.
   // It has the name attribute "registration"
   $("form[name='search_form']").validate({
+    // Disable autofocus on valid input
+    focusInvalid: false,
     // Specify validation rules
     rules: {
       // The key name on the left side is the name attribute

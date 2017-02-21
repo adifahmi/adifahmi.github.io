@@ -12,9 +12,9 @@
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 400) {
-    $('.scroll-top').fadeIn();
+    $('.scroll-top').css('display', 'block');
   } else {
-    $('.scroll-top').fadeOut();
+    $('.scroll-top').css('display', 'none');
   }
 });
 

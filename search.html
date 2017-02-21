@@ -7,6 +7,14 @@ description: Search blog post.
 
 {% include wrap.html %}
 
+<style>
+.small-em {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #b3b3b3
+}
+</style>
+
 <div class="container mtb">
   <div class="row">
     <div class="col-lg-2">
@@ -30,7 +38,8 @@ description: Search blog post.
         "category": "{{ post.categories | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}",
-        "img": "https://adifahmi.github.io/assets/img/{{ post.layout }}/{{ post.img }}"
+        "img": "https://adifahmi.github.io/assets/img/{{ post.layout }}/{{ post.img }}",
+        "date": "{{ post.date | date_to_string }}"
       }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}

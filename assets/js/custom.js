@@ -15,7 +15,7 @@ $(window).load(function() {
     $(".se-pre-con").fadeOut("slow");;
 });
 
-// jQuery form Validation
+// jQuery CONTACT form Validation
 // Wait for the DOM to be ready
 (function($) {
   // Initialize form validation on the registration form.
@@ -76,6 +76,31 @@ $(window).load(function() {
           }
       });
       return false;
+    }
+  });
+})(jQuery);
+
+// jQuery SEARCH form Validation
+// Wait for the DOM to be ready
+(function($) {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("form[name='search_form']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      query: "required"
+    },
+    // Specify validation error messages
+    messages: {
+      query: "This field is required."
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
     }
   });
 })(jQuery);

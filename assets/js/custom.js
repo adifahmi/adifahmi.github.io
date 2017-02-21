@@ -8,6 +8,16 @@
 	}); 
 })(jQuery);
 
+// show scroll to top button
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 400) {
+    $('.scroll-top').fadeIn();
+  } else {
+    $('.scroll-top').fadeOut();
+  }
+});
+
 // Pre loader script
 // Wait for window load
 $(window).load(function() {

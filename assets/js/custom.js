@@ -12,9 +12,9 @@
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 400) {
-    $('.scroll-top').css('display', 'block');
+    $('.scroll-top').removeClass('hidden');
   } else {
-    $('.scroll-top').css('display', 'none');
+    $('.scroll-top').addClass('hidden');
   }
 });
 

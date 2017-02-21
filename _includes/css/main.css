@@ -523,7 +523,6 @@ if it's not present, don't show loader */
 
 /* Scroll to top CSS */
 .scroll-top {
-    display: none;
     z-index: 1049;
     position: fixed;
     right: 2%;

@@ -555,6 +555,13 @@ form .valid {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 
+/* Footer Below */
+.footer-below {
+    padding: 25px 0;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+}
+
 /* Github Syntax highlighter */
 /* source https://github.com/mojombo/tpw/blob/master/css/syntax.css */
 .highlight  { background: #ffffff; }

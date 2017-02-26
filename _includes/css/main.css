@@ -460,6 +460,28 @@ csmall {
     background-size: cover;
 }
 
+/* About Page */
+#aboutwrap {
+	background: url(../img/about.jpg) no-repeat center top;
+	margin-top: -60px;
+	padding-top:0px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 400px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /* Blog Page */
 .popular-posts { 
 	margin: 0px;

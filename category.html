@@ -9,7 +9,7 @@ description: List all categories from this site.
     <div class="row">
         <div class="col-lg-8">
 
-        <! -- BLOG POSTS LIST -->
+        <!-- BLOG POSTS LIST -->
         {% for category in site.categories %}{% unless category.first == "blog" or category.first == "portfolio" %}
 
                 <a class="anchor" id="{{ category.first }}"></a><h4>{{ category.first }}</h4>
@@ -28,9 +28,9 @@ description: List all categories from this site.
 
 
         {% endunless %}{% endfor %}
-        </div><! --/col-lg-8 -->
+        </div><!--/col-lg-8 -->
 
         {% include sidebar.html %}
 
-    </div><! --/row -->
-</div><! --/container -->
+    </div><!--/row -->
+</div><!--/container -->

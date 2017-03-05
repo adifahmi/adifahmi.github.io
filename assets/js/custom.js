@@ -71,7 +71,7 @@ $(window).load(function() {
             $("#submit-button").attr("disabled", true).val('Sending message…');
           },
           success: function(data) {
-            //console.log(data);
+            console.log(data);
             $("#submit-button").val('Message sent!');
             $(form).trigger("reset");
             $("#contact_div").addClass('hidden');

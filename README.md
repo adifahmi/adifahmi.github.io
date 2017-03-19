@@ -10,4 +10,6 @@ Theme is [Solid](https://github.com/st4ple/solid-jekyll). A Bootstrap theme for 
 
 See the live version [Here](http://adifahmi.github.io) :fire:.
 
+Attention, please do edit/remove some personal content before publish this forked repository.:warning:
+
 ![Screenshot](https://adifahmi.github.io/assets/img/af-preview.jpg)

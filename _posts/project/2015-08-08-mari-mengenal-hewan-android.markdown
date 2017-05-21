@@ -12,7 +12,7 @@ carousel:
 - mmh-3.jpg
 tagged: Android, Task, College
 client: Gunadarma University (Penulisan Ilmiah)
-website: -
+website: ~
 description: This is my very first Android application for my Scientific Writing (Penulisan Ilmiah). A static e-learning app for children with sound and quiz features.
 ---
 <h3>MARI MENGENAL HEWAN E-LEARNING APP</h3>

@@ -20,5 +20,6 @@ description: Muztreat is the first muslim online treatment in Indonesia. This is
 <h3>MUZTREAT.ID</h3>
 Muztreat is the first muslim online treatment in Indonesia.
 <br>
+This is my first paid work as a semi full-stack web developer (during my last semester of college). I made the website from scratch, specify the database and pick the template based on client flow instruction. I also made a simple API (standard RESTfull) for Android app.
 <br><br>
 Visit the live preview version <a href="http://muztreat.id" target="blank">here</a>.

@@ -5,7 +5,7 @@ date:   2016-11-01 12:00:00
 author: Adi Fahmi
 categories:
 - portfolio
-img: saberpungli-mobile.jpg
+img: saber-mobile.jpg
 carousel:
 - saber-mobile-1.jpg
 - saber-mobile-2.jpg

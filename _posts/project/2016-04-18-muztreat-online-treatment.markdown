@@ -15,11 +15,10 @@ carousel:
 tagged: Web, Start-up, Professional
 client: Muztreat.
 website: http://muztreat.id
-description: Muztreat is the first muslim online treatment in Indonesia. This is my first professional work as a full-stack web developer.
+description: Muztreat is the first muslim online treatment in Indonesia. This is my first professional work as a semi full-stack web developer.
 ---
 <h3>MUZTREAT.ID</h3>
 Muztreat is the first muslim online treatment in Indonesia.
 <br>
-This is my first professional work as a full-stack web developer.
 <br><br>
 Visit the live preview version <a href="http://muztreat.id" target="blank">here</a>.

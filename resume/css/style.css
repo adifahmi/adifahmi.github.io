@@ -744,6 +744,10 @@ only print {
     font-style: italic
 }
 
+.experience-item>.item-header .position-desc {
+    margin-bottom: 0;
+}
+
 .projects-section>.extra {
     font-style: italic
 }

@@ -1,3 +1,12 @@
+//NProgress progress bar
+NProgress.start();
+NProgress.inc();
+ $(window).load(function() {
+    // Animate loader off screen
+    // $(".se-pre-con").fadeOut("slow");
+    NProgress.done();
+});
+
 (function($) {
 // prettyPhoto
 	jQuery(document).ready(function(){
@@ -16,13 +25,6 @@ $(document).scroll(function() {
   } else {
     $('.scroll-top').addClass('hidden');
   }
-});
-
-// Pre loader script
-// Wait for window load
-$(window).load(function() {
-	// Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
 });
 
 // jQuery CONTACT form Validation

@@ -1,12 +1,10 @@
 //NProgress progress bar
 NProgress.start();
-NProgress.inc();
-console.log("NProgress started and incremented");
+NProgress.inc(0.2);
  $(window).load(function() {
     // Animate loader off screen
     // $(".se-pre-con").fadeOut("slow");
     NProgress.done();
-    console.log("NProgress done");
 });
 
 (function($) {

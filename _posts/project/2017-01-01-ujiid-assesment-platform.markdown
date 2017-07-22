@@ -38,7 +38,7 @@ description: UJIID - Online Assesment Platform in Indonesia
     <li>MySQL</li>
     <li>Bootstrap & jQuery</li>
 </ul>
-<h3>Assesment App</li>
+<h3>Assesment App</h3>
 <ul>
     <li><a href="https://www.taotesting.com/" target="_blank">TAO Open Source</a></li>
     <li>MySQL</li>

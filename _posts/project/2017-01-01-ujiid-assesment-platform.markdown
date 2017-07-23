@@ -21,16 +21,16 @@ carousel:
 tagged: Web, Assesment, Professional
 client: PT Conexus Solusi
 website: http://ujiid.com
-description: UJIID - Online Assesment Platform in Indonesia
+description: UJIID - ATS (Applicant Tracking System) and Online Assesment Platform
 ---
 <h3>UJIID</h3>
 
 <p>UJIID is an assesment platform that can help you find the right candidate faster. It's more than just a digitizing, UJIID is a platform for testing your competency to achieve optimization.</p>
 
-<p>We made a separated portal with Laravel and integrate it with the TAO Web Assesment App. We also made a lot of customiation and bug fixing on the Web Assesment App based on requirements.</p>
+<p>We made a separated ATS (Applicant Tracking System) Portal with Laravel and integrate it with the TAO Web Assesment App. We also made a lot of customization and bug fixing on the Web Assesment App based on requirements.</p>
 
 <p>Notable Tech Stack :</p>
-<h3>Portal</h3>
+<h3>ATS (Applicant Tracking System) Portal</h3>
 <ul>
     <li>Laravel 5.2</li>
     <li>MySQL</li>

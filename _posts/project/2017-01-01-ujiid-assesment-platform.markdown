@@ -30,7 +30,6 @@ description: UJIID - Online Assesment Platform in Indonesia
 <p>We made a separated portal with Laravel and integrate it with the TAO Web Assesment App. We also made a lot of customiation and bug fixing on the Web Assesment App based on requirements.</p>
 
 <p>Notable Tech Stack :</p>
-<br>
 <h3>Portal</h3>
 <ul>
     <li>Laravel 5.2</li>

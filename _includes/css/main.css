@@ -527,6 +527,15 @@ a.anchor{
     visibility: hidden;
 }
 
+/*Carousel slide customization*/
+.carousel-control {
+	background: transparent !important;
+	color: #384452;
+}
+.carousel-control:hover, .carousel-control:focus {
+	color: #384452;
+}
+
 /*CSS for pre-loader image*/
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 

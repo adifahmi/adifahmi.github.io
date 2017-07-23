@@ -3,9 +3,9 @@
     
     <!-- enforce https -->
     <script type="text/javascript">
-    var host = "adifahmi.me";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+        var host = "adifahmi.me";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
     </script> 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,14 +32,14 @@
     <meta name="twitter:site" content="@adifahmii" />
     <meta name="twitter:title" content="{{ site.title }}{% if page.title %} — {{ page.title }}{% endif %}" />
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | truncate: 100 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:image" content="{% if page.img %}https://adifahmi.github.io/assets/img/{% if page.layout %}{{ page.layout }}{% endif %}/{{ page.img }}{% else %}https://adifahmi.github.io/assets/img/af-logo.png{% endif %}" />
+    <meta name="twitter:image" content="{% if page.img %}{{ site.url }}/assets/img/{% if page.layout %}{{ page.layout }}{% endif %}/{{ page.img }}{% else %}{{ site.url }}/assets/img/af-logo.png{% endif %}" />
 
     <!-- Global meta tag -->
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="{{ site.title }}{% if page.title %} — {{ page.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description | truncate: 100 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{% if page.img %}https://adifahmi.github.io/assets/img/{% if page.layout %}{{ page.layout }}{% endif %}/{{ page.img }}{% else %}https://adifahmi.github.io/assets/img/af-logo.png{% endif %}" />
+    <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/{% if page.layout %}{{ page.layout }}{% endif %}/{{ page.img }}{% else %}{{ site.url }}/assets/img/af-logo.png{% endif %}" />
 
     <!-- Chrome color meta tag -->
     <meta name="theme-color" content="#384452">

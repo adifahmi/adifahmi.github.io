@@ -1,3 +1,6 @@
+//Extra Log :P
+console.log("%cHi! there, what are you doing here?", "background: black; color: cyan; font-size: 50pt");
+
 //NProgress progress bar
 NProgress.start();
 NProgress.inc(0.2);

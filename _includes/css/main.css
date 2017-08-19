@@ -593,18 +593,6 @@ form .valid {
     color: #FFFFFF;
 }
 
-/* Navbar Custom */
-.navbar {
-	padding: 10px 0;
-	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-	transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
-
-.top-nav-collapse {
-    padding: 0;
-}
-
 /* Github Syntax highlighter */
 /* source https://github.com/mojombo/tpw/blob/master/css/syntax.css */
 .highlight  { background: #ffffff; }

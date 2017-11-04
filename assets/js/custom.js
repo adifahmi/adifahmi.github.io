@@ -24,9 +24,9 @@ NProgress.inc(0.2);
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 400) {
-    $('.scroll-top').removeClass('hidden');
+    $('.scroll-top').fadeIn("slow");
   } else {
-    $('.scroll-top').addClass('hidden');
+    $('.scroll-top').fadeOut("slow");
   }
 });
 

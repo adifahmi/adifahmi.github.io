@@ -12,4 +12,7 @@ See the live version [Here](http://adifahmi.github.io) :fire:.
 
 Attention, please do edit/remove some personal content before publish this forked repository :warning:.
 
+# PWA
+Now with PWA Support, if you publish this site on https, you should be able to make use of PWA like enable caching so visitor with no internet connection will still be able to see your cached page or at least a special offline page if the page visited hasn't been cached before, also it will pop add to homescreen if visited from chrome on Android and iOS.
+
 ![Screenshot](https://adifahmi.github.io/assets/img/af-preview.jpg)

@@ -5,7 +5,7 @@ title: ADI FAHMI
 description: "Adi Fahmi's Personal Site."
 analytics: UA-91950225-1 #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "https://adifahmi.me"
+url: "https://adifahmi.github.io"
 author: Adi Fahmi
 disqus_shortname: adifahmi
 twitter_username: adifahmii
@@ -53,8 +53,8 @@ email: adifahmi379@gmail.com
 tel: +62 838 768 682 38
 
 # SEARCH ENGINE KNOW HTTPS
-url: https://adifahmi.me
-enforce_ssl: adifahmi.me
+url: https://adifahmi.github.io
+enforce_ssl: adifahmi.github.io
 
 # JEKYLL SITEMAP
 gems:

@@ -63,8 +63,8 @@ gems:
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
 # Short text. Shown in footer on every page and also separately on Home and Contact page.
-about_author: "<del>A fresh graduate</del> Currently a Web Developer at Garena Indonesia with some works and projects experience. Used to autodidact, willing to learn and making fast adaption to work as a team."
-about_author_short: "<del>A fresh graduate</del> Currently a Web Developer at Garena Indonesia ..."
+about_author: "A learning in progress Backend Engineer, a fast learner person. I can communicate in English both spoken and written. I am friendly, discipline and a hard worker. Works well both in a team or individual, cooperate with others and handle loads amount of work. Also used to autodidact to learn new things."
+about_author_short: ">A learning in progress Backend Engineer ..."
 
 # Testimonial content. Shown on Home and About page. 
 testimonial:

@@ -199,6 +199,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-art {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
   grid-column: 9 / 13;
   grid-row: 1 / 3;
   align-self: stretch;
@@ -206,42 +208,188 @@ a { color: inherit; text-decoration: none; }
   margin-top: clamp(20px, 3vw, 40px);
   margin-bottom: clamp(30px, 4vw, 60px);
   position: relative;
-  background:
-    linear-gradient(135deg, rgba(229, 40, 45, .12), transparent 65%),
-    url('../img/hero-bg.png');
-  background-size: auto, 180px;
-  display: grid;
-  place-items: center;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: grab;
+  touch-action: pan-y;
+  perspective: 1100px;
+  transform: rotateX(var(--tilt-y)) rotateY(var(--tilt-x));
+  transform-style: preserve-3d;
+  transition: transform .42s cubic-bezier(.2,.75,.25,1);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.hero-art::after {
-  content: '';
+.hero-art:active,
+.hero-art.is-dragging { cursor: grabbing; }
+
+.hero-art:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 7px;
+}
+
+.art-scene {
   position: absolute;
   inset: 0;
-  border: 1px solid var(--line);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  isolation: isolate;
 }
 
-.art-core {
-  width: 35%;
-  aspect-ratio: 1;
-  border: 1px solid var(--red);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: var(--red);
-  font: clamp(16px, 3vw, 40px) var(--mono);
-  z-index: 1;
+.art-surface,
+.art-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
+
+.art-surface {
+  transform: translateZ(-34px) scale(1.04);
+  border: 1px solid rgba(244, 241, 236, .2);
+  background:
+    radial-gradient(ellipse at 28% 18%, rgba(229, 40, 45, .2), transparent 48%),
+    linear-gradient(145deg, rgba(28, 24, 24, .35), rgba(8, 8, 8, .72)),
+    url('../img/hero-bg.png');
+  background-size: auto, auto, 190px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, .35), inset 0 0 55px rgba(0, 0, 0, .4);
+}
+
+.art-grid {
+  transform: translateZ(-10px) scale(.94);
+  background:
+    linear-gradient(rgba(244, 241, 236, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 236, .045) 1px, transparent 1px),
+    radial-gradient(ellipse at center, transparent 20%, rgba(0, 0, 0, .5) 100%);
+  background-size: 42px 42px, 42px 42px, auto;
+  mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+}
+
+.art-label,
+.art-hint {
+  position: absolute;
+  z-index: 2;
+  color: rgba(244, 241, 236, .65);
+  font: 9px var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  transform: translateZ(48px);
+}
+
+.art-label { top: 22px; left: 22px; }
+.art-hint { right: 20px; bottom: 18px; color: rgba(244, 241, 236, .48); }
+.art-hint span { color: var(--red); padding: 0 4px; }
 
 .orbit {
   position: absolute;
-  border: 1px solid rgba(229, 40, 45, .5);
+  top: 50%;
+  left: 50%;
+  display: block;
+  border: 1px solid rgba(229, 40, 45, .76);
   border-radius: 50%;
-  transform: rotate(-35deg);
+  transform-style: preserve-3d;
+  box-shadow: 0 0 18px rgba(229, 40, 45, .08);
 }
 
-.orbit-one { width: 72%; height: 38%; }
-.orbit-two { width: 47%; height: 76%; transform: rotate(55deg); }
+.orbit-one {
+  width: 76%;
+  height: 38%;
+  transform: translate(-50%, -50%) rotateX(68deg) rotateZ(-28deg) translateZ(42px);
+}
+
+.orbit-two {
+  width: 67%;
+  height: 42%;
+  border-color: rgba(229, 40, 45, .54);
+  transform: translate(-50%, -50%) rotateY(58deg) rotateZ(34deg) translateZ(72px);
+}
+
+.orbit-three {
+  width: 46%;
+  height: 46%;
+  border-color: rgba(244, 241, 236, .26);
+  transform: translate(-50%, -50%) rotateX(74deg) rotateZ(18deg) translateZ(20px);
+}
+
+.orbit-satellite {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff 0, #ff7774 18%, var(--red) 55%, #721316 100%);
+  box-shadow: 0 0 16px rgba(229, 40, 45, .7);
+  transform: translate(-50%, -50%) translateZ(2px);
+}
+
+.orbit-two .orbit-satellite {
+  width: 7px;
+  height: 7px;
+  background: radial-gradient(circle at 35% 30%, #fff 0, #ffd8d7 18%, #c6aaa8 60%, #615451 100%);
+  box-shadow: 0 0 12px rgba(244, 241, 236, .35);
+}
+
+.orbit-three .orbit-satellite {
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+}
+
+.art-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: grid;
+  width: clamp(110px, 34%, 190px);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgba(255, 90, 90, .8);
+  border-radius: 50%;
+  color: var(--red);
+  background:
+    radial-gradient(circle at 32% 24%, rgba(255, 255, 255, .14), transparent 32%),
+    radial-gradient(circle at 50% 45%, rgba(45, 20, 21, .96), rgba(8, 8, 8, .98) 70%);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, .6), 0 0 34px rgba(229, 40, 45, .18), inset 0 1px 0 rgba(255, 255, 255, .24);
+  transform: translate(-50%, -50%) translateZ(112px);
+}
+
+.core-rim {
+  position: absolute;
+  inset: 9%;
+  border: 1px solid rgba(229, 40, 45, .24);
+  border-radius: 50%;
+  box-shadow: inset 0 0 18px rgba(229, 40, 45, .08);
+}
+
+.core-monogram {
+  margin-top: -7px;
+  font: 500 clamp(28px, 4vw, 48px)/1 var(--mono);
+  letter-spacing: -.13em;
+  text-shadow: 0 0 24px rgba(229, 40, 45, .3);
+}
+
+.core-index {
+  position: absolute;
+  bottom: 22%;
+  font: 8px var(--mono);
+  letter-spacing: .2em;
+  color: rgba(244, 241, 236, .58);
+}
+
+.hero-art:hover .art-surface {
+  border-color: rgba(244, 241, 236, .3);
+}
+
+.hero-art:focus-visible .art-surface {
+  border-color: rgba(229, 40, 45, .72);
+}
+
+.hero-art.is-dragging { transition-duration: .08s; }
 
 .hero-foot {
   grid-column: 1 / 13;
@@ -494,6 +642,10 @@ a { color: inherit; text-decoration: none; }
     margin: 0 0 90px;
   }
 
+  .art-label { top: 16px; left: 16px; }
+  .art-hint { right: 14px; bottom: 14px; font-size: 9px; }
+  .core-monogram { font-size: 32px; }
+
   .hero-foot { display: flex; margin-top: 0; }
 
   .statement,
@@ -547,4 +699,6 @@ a { color: inherit; text-decoration: none; }
   .contact-link {
     transition: none;
   }
+
+  .hero-art { transition: none; }
 }

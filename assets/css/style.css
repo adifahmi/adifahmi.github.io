@@ -217,6 +217,8 @@ a { color: inherit; text-decoration: none; }
   text-align: left;
   cursor: grab;
   touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
   perspective: 1100px;
   transform: rotateX(var(--tilt-y)) rotateY(var(--tilt-x));
   transform-style: preserve-3d;
@@ -282,6 +284,7 @@ a { color: inherit; text-decoration: none; }
 .art-label { top: 22px; left: 22px; }
 .art-hint { right: 20px; bottom: 18px; color: rgba(244, 241, 236, .48); }
 .art-hint span { color: var(--red); padding: 0 4px; }
+.art-hint--touch { display: none; }
 
 .orbit {
   position: absolute;
@@ -644,6 +647,8 @@ a { color: inherit; text-decoration: none; }
 
   .art-label { top: 16px; left: 16px; }
   .art-hint { right: 14px; bottom: 14px; font-size: 9px; }
+  .art-hint--desktop { display: none; }
+  .art-hint--touch { display: block; }
   .core-monogram { font-size: 32px; }
 
   .hero-foot { display: flex; margin-top: 0; }

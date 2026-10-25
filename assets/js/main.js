@@ -21,44 +21,55 @@
   items.forEach((item) => observer.observe(item));
 
   const tiltScene = document.querySelector('[data-tilt-scene]');
-  if (tiltScene) {
-    let tiltX = 0;
-    let tiltY = 0;
+  const artAssembly = tiltScene?.querySelector('[data-art-assembly]');
+  if (tiltScene && artAssembly) {
+    let assemblyX = 0;
+    let assemblyY = 0;
+    let assemblyRotateX = 0;
+    let assemblyRotateY = 0;
     let activePointer = null;
     let startX = 0;
     let startY = 0;
-    let startTiltX = 0;
-    let startTiltY = 0;
+    let startAssemblyX = 0;
+    let startAssemblyY = 0;
+    let startRotateX = 0;
+    let startRotateY = 0;
     let dragBounds = null;
-    let hoverBounds = null;
     let didDrag = false;
     let suppressClickUntil = 0;
 
-    const renderTilt = (x, y) => {
-      tiltX = Math.max(-12, Math.min(12, x));
-      tiltY = Math.max(-10, Math.min(10, y));
-      tiltScene.style.setProperty('--tilt-x', `${tiltX}deg`);
-      tiltScene.style.setProperty('--tilt-y', `${tiltY}deg`);
+    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+
+    const renderAssembly = (x, y, rotateX = assemblyRotateX, rotateY = assemblyRotateY) => {
+      const bounds = tiltScene.getBoundingClientRect();
+      const maxX = Math.min(110, bounds.width * 0.2);
+      const maxY = Math.min(80, bounds.height * 0.16);
+      assemblyX = clamp(x, -maxX, maxX);
+      assemblyY = clamp(y, -maxY, maxY);
+      assemblyRotateX = clamp(rotateX, -14, 14);
+      assemblyRotateY = clamp(rotateY, -14, 14);
+      artAssembly.style.setProperty('--assembly-x', `${assemblyX}px`);
+      artAssembly.style.setProperty('--assembly-y', `${assemblyY}px`);
+      artAssembly.style.setProperty('--assembly-rotate-x', `${assemblyRotateX}deg`);
+      artAssembly.style.setProperty('--assembly-rotate-y', `${assemblyRotateY}deg`);
     };
 
-    const resetTilt = () => renderTilt(0, 0);
+    const resetAssembly = () => renderAssembly(0, 0, 0, 0);
 
-    tiltScene.addEventListener('pointerenter', (event) => {
-      if (event.pointerType !== 'touch' && activePointer === null) {
-        hoverBounds = tiltScene.getBoundingClientRect();
-      }
-    });
-
-    tiltScene.addEventListener('pointerdown', (event) => {
+    artAssembly.addEventListener('pointerdown', (event) => {
+      const target = event.target instanceof Element ? event.target.closest('.orbit, .art-core') : null;
+      if (!target || !artAssembly.contains(target)) return;
       if (event.isPrimary === false || (event.button !== 0 && event.pointerType !== 'touch')) return;
       activePointer = event.pointerId;
       startX = event.clientX;
       startY = event.clientY;
-      startTiltX = tiltX;
-      startTiltY = tiltY;
+      startAssemblyX = assemblyX;
+      startAssemblyY = assemblyY;
+      startRotateX = assemblyRotateX;
+      startRotateY = assemblyRotateY;
       dragBounds = tiltScene.getBoundingClientRect();
       didDrag = false;
-      tiltScene.classList.add('is-dragging');
+      artAssembly.classList.add('is-dragging');
       try { tiltScene.setPointerCapture(event.pointerId); } catch { /* Pointer may already be inactive. */ }
     });
 
@@ -66,30 +77,21 @@
       if (activePointer !== event.pointerId || !dragBounds?.width || !dragBounds?.height) return;
       const deltaX = event.clientX - startX;
       const deltaY = event.clientY - startY;
-      if (Math.hypot(deltaX, deltaY) > 4) didDrag = true;
-
-      if (event.pointerType === 'touch') {
-        // Keep vertical swipes available for page scrolling on touch screens.
-        renderTilt(startTiltX + (deltaX / dragBounds.width) * 24, startTiltY);
-      } else {
-        renderTilt(startTiltX + (deltaX / dragBounds.width) * 24, startTiltY - (deltaY / dragBounds.height) * 20);
-      }
-    });
-
-    tiltScene.addEventListener('pointermove', (event) => {
-      if (event.pointerType === 'touch' || activePointer !== null) return;
-      const bounds = hoverBounds || tiltScene.getBoundingClientRect();
-      if (!bounds.width || !bounds.height) return;
-      const x = (event.clientX - bounds.left) / bounds.width;
-      const y = (event.clientY - bounds.top) / bounds.height;
-      renderTilt((x - 0.5) * 24, (0.5 - y) * 20);
+      if (Math.hypot(deltaX, deltaY) > 5) didDrag = true;
+      if (!didDrag) return;
+      renderAssembly(
+        startAssemblyX + deltaX,
+        startAssemblyY + deltaY,
+        startRotateX - (deltaY / dragBounds.height) * 28,
+        startRotateY + (deltaX / dragBounds.width) * 28,
+      );
     });
 
     window.addEventListener('pointerup', (event) => {
       if (activePointer !== event.pointerId) return;
       activePointer = null;
       dragBounds = null;
-      tiltScene.classList.remove('is-dragging');
+      artAssembly.classList.remove('is-dragging');
       if (didDrag) {
         suppressClickUntil = performance.now() + 500;
       }
@@ -99,15 +101,7 @@
       activePointer = null;
       dragBounds = null;
       didDrag = false;
-      tiltScene.classList.remove('is-dragging');
-      resetTilt();
-    });
-
-    tiltScene.addEventListener('pointerleave', (event) => {
-      if (event.pointerType !== 'touch' && activePointer === null) {
-        hoverBounds = null;
-        resetTilt();
-      }
+      artAssembly.classList.remove('is-dragging');
     });
 
     tiltScene.addEventListener('click', (event) => {
@@ -116,16 +110,16 @@
         suppressClickUntil = 0;
         return;
       }
-      resetTilt();
+      resetAssembly();
     });
 
     tiltScene.addEventListener('keydown', (event) => {
-      const step = event.shiftKey ? 5 : 3;
-      if (event.key === 'ArrowLeft') renderTilt(tiltX - step, tiltY);
-      else if (event.key === 'ArrowRight') renderTilt(tiltX + step, tiltY);
-      else if (event.key === 'ArrowUp') renderTilt(tiltX, tiltY + step);
-      else if (event.key === 'ArrowDown') renderTilt(tiltX, tiltY - step);
-      else if (event.key === 'Home') resetTilt();
+      const step = event.shiftKey ? 24 : 12;
+      if (event.key === 'ArrowLeft') renderAssembly(assemblyX - step, assemblyY, assemblyRotateX, assemblyRotateY - 2);
+      else if (event.key === 'ArrowRight') renderAssembly(assemblyX + step, assemblyY, assemblyRotateX, assemblyRotateY + 2);
+      else if (event.key === 'ArrowUp') renderAssembly(assemblyX, assemblyY - step, assemblyRotateX + 2, assemblyRotateY);
+      else if (event.key === 'ArrowDown') renderAssembly(assemblyX, assemblyY + step, assemblyRotateX - 2, assemblyRotateY);
+      else if (event.key === 'Home') resetAssembly();
       else return;
       event.preventDefault();
     });
